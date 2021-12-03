@@ -1,6 +1,9 @@
 body {
     font-family: 'Nunito Sans', sans-serif;
 }
+header {
+    border-bottom: 1px solid #DEDEDE;
+}
 .container {
     max-width: 1180px;
     margin: 0 auto;
@@ -10,8 +13,11 @@ body {
     font-family: 'Open Sans', sans-serif; 
     justify-content: space-between;
     align-items: center;
-    padding-top: 42px;
-    padding-bottom: 42px;
+    padding-top: 26px;
+    padding-bottom: 25px;
+}
+nav {
+    margin-right: 100px;
 }
 .nav-header {
     display: flex;
@@ -31,6 +37,9 @@ body {
     font-weight: 600;
     text-decoration: none;
     color: #443737;
+}
+.nav__link:hover {
+    color: #FFC725;
 }
 .header button {
     font-size: 15px;
@@ -54,7 +63,8 @@ body {
     background: transparent;
     border: none;
     padding: 0;
-    gap: 10px;
+    gap: 7px;
+    cursor: pointer;
 }
 .button-item {
     position: relative;
@@ -84,7 +94,7 @@ body {
 .breadcrumbs {
     display: flex;
     list-style-type: none;
-    gap: 16px;
+    gap: 7px;
     justify-content: center;
     padding-left: 0;
     margin-top: 0;
@@ -96,10 +106,17 @@ body {
     text-decoration: none;
     color: #DEDEDE;
 }
+.breadcrumbs a:hover {
+    color: #FFC725;
+}
 .breadcrumbs a::before {
     content: "/";
     position: relative;
-    left: -7px;
+    left: -3px;
+    pointer-events: none;
+}
+.breadcrumbs a:hover::before {
+    color: #DEDEDE;
 }
 .breadcrumbs li:first-child a::before {
     display: none;
@@ -108,13 +125,14 @@ body {
     font-size: 79px;
     font-weight: 700;
     color: #FFFFFF;
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 .description {
     font-family: 'Open Sans', sans-serif; 
     font-size: 15px;
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 1.6;
     color: #FAF9F9;
     max-width: 320px;
     margin: 0 auto;
