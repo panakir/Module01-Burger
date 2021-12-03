@@ -89,7 +89,8 @@ nav {
     background-image: url(../images/bg.jpg);
     background-size: cover;
     background-position: center center;
-    padding: 142px 0
+    padding: 142px 0;
+    margin-bottom: 140px;
 }
 .breadcrumbs {
     display: flex;
@@ -136,4 +137,51 @@ nav {
     color: #FAF9F9;
     max-width: 320px;
     margin: 0 auto;
+}
+.banner-box {
+    background-image: url(../images/banner-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 100px 100px 120px;
+ }
+.banner-title span {
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #F37335;
+    padding: 5px 0;
+    margin-bottom: 8px;
+    border-radius: 14px;
+    display: block;
+    max-width: 95px;
+    text-align: center;
+}
+.banner-title {
+    color: #FFFFFF;
+    font-size: 60px;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 15px;
+}   
+.banner-text {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #FAF9F9;
+    max-width: 330px;
+    margin-bottom: 36px;
+}
+.banner-link {
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #1E2F40;
+    padding: 20px 25px;
+    background: #FBB731;
+    border-radius: 5px;
+
 }
