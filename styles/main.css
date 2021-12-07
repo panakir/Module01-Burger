@@ -19,10 +19,7 @@ header {
 .header-item {
     display: flex;
     justify-content: space-between;
-    flex-basis: 77%;
-}
-nav {
-    margin-right: 100px;
+    flex-basis: 68.4%;
 }
 .nav-header {
     display: flex;
@@ -94,7 +91,7 @@ nav {
     background-image: url(../images/bg.jpg);
     background-size: cover;
     background-position: center center;
-    padding: 142px 0;
+    padding: 141px 0;
     margin-bottom: 140px;
 }
 .breadcrumbs {
@@ -147,8 +144,8 @@ nav {
     background-image: url(../images/banner-bg.jpg);
     background-position: center center;
     background-size: cover;
-    padding: 100px 100px 120px;
-    margin-bottom: 103px;
+    padding: 101px 100px 120px;
+    margin-bottom: 83px;
  }
 .banner-title span {
     color: #FFFFFF;
@@ -186,20 +183,24 @@ nav {
     text-decoration: none;
     text-transform: uppercase;
     color: #1E2F40;
-    padding: 18px 23px;
+    padding: 18px 24px;
     background: #FBB731;
     border-radius: 5px;
     border: 1px solid #FBB731;
+    transition: .2s;
 }
 .banner-link:hover {
     color: #FBB731;
     background: transparent;
 }
+.menu {
+    padding-top: 20px;
+}
 .menu-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 35px;
+    margin-bottom: 36px;
 }
 .menu-header-title {
     font-size: 44px;
@@ -268,6 +269,7 @@ nav {
     justify-content: space-between;
     margin: 0 auto;
     position: relative;
+    transition: .2s;
 }
 .menu-grid-btn:hover {
     background: #F37335;
@@ -353,4 +355,153 @@ nav {
 .footer-list {
     padding-left: 0;
     list-style-type: none;
+}
+.button-up{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #FBB731;
+    color:#1E2F40; ;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: 1s;
+}
+.button-up:hover {
+    background: #F37335;
+}
+.button-up.hidden {
+    opacity: 0;
+}
+.button-up.visible {
+    orphans: 1;
+}
+/*Style INDEX */
+.main {
+    background: linear-gradient(180deg, #0C4C7B -100%, #1E2F40 100%);
+}
+.wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 10px;
+}
+.content {
+    color: #FAF9F9;
+    flex: 0 0 580px;
+    padding-top: 170px;
+    padding-bottom: 170px;
+}
+.content-title {
+    font-size: 120px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 142px;
+    margin-bottom: 34px;
+    margin-top: 0;
+}
+.content-title span {
+    color: #FBB731;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 38px;
+    display: block;
+    margin-bottom: 10px;
+}
+.content-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 48px;
+}
+.content-link,
+.promo a {
+    color: #1E2F40;
+    background-color: #FBB731;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 21px 48px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+.visual {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.visual-bg {
+    width: 432px;
+    height: 100%;
+    background: linear-gradient(2.42deg, #F37335 -19.6%, #FBB731 100.79%, #FDC830 100.79%);
+}
+.main img {
+    width: 829px;
+    position: absolute;
+    right: -168px;
+}
+.promo {
+    padding-top: 186px;
+    padding-bottom: 46px;
+}
+.promo-left,
+.promo-right {
+    flex: 0 0 49.2%;
+    color: #fff;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.promo-left {
+    background-image: url(../images/promo-left.png);
+    padding: 108px 43px 95px;
+}
+.promo-right {
+    background-image: url(../images/promo-right.png);
+    padding: 102px 49px;
+}
+.sale {
+    font-size: 14px;
+    font-weight: 900;
+    background: #F37335;
+    padding: 5px 19px;
+    border-radius: 14px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    margin-top: 8px;
+}
+.cost {
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+.promo-description {
+    font-family: 'Open Sans', sans-serif;
+    color: #FAF9F9;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+.promo-left .promo-description {
+    max-width: 392px;
+}
+.promo-right .promo-description {
+    max-width: 300px;
+    margin-bottom: 22px;
+}
+.free {
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 0;
 }
