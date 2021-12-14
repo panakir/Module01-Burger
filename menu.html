@@ -16,10 +16,13 @@
     <header id="headerTop">
         <div class="container">
             <div class="header">
+                <div class="header-burger">
+                    <button class="burger" onclick="openModal()"></button>
+                </div>
                 <div class="header-item">
                     <a href="index.html" class="header-logo"></a>
                     <nav>
-                        <ul class="nav-header">
+                        <ul class="header-nav">
                             <li><a class="nav__link" href="index.html">Главная</a></li>
                             <li><a class="nav__link active" href="#">Меню</a></li>
                             <li><a class="nav__link" href="#">О нас</a></li>
@@ -152,7 +155,7 @@
                     <h2 class="menu-header-title" >Дополнительно</h2>
                 </div>
                 <!--Сетка меню-->
-                <div class="grid-menu">
+                <div class="grid-menu menu-other">
                     <div class="grid-menu-item">
                         <div class="grid-menu-cover">
                             <img src="images/extra-menu/01.jpg" alt="Сэндвич">
@@ -194,10 +197,10 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-box">
-                <div class="item">
+                <div class="item _logo">
                     <img class="footer-logo" src="images/logo-footer.svg" alt="Logo">
                 </div>
-                <div class="footer-item">
+                <div class="footer-item _links">
                     <h2>основные ссылки</h2>
                     <ul class="footer-list">
                         <li><a href="menu.html">Меню</a></li>
@@ -205,8 +208,12 @@
                         <li><a href="#">Методы оплаты</a></li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
+                    <ul class="footer-list footer-list-tel _tel">
+                        <li><a href="tel:+79007871313">+ 7 900 787 13-13</a></li>
+                        <li><a href="tel:+79007871414">+ 7 900 787 14-14</a></li>
+                    </ul>
                 </div>
-                <div class="footer-item">
+                <div class="footer-item _info">
                     <h2>основная информация</h2>
                     <ul class="footer-list">
                         <li>
@@ -221,7 +228,7 @@
                     </ul>
                 </div>
                 <div class="footer-tel">
-                    <ul class="footer-list footer-list-tel">
+                    <ul class="footer-list footer-list-tel _tel">
                         <li><a href="tel:+79007871313">+ 7 900 787 13-13</a></li>
                         <li><a href="tel:+79007871414">+ 7 900 787 14-14</a></li>
                     </ul>
@@ -229,7 +236,18 @@
             </div>
         </div>
     </footer>
+    <!--Кнопка "Наверх"-->
     <a href="#headerTop" class="button-up hidden" id="btnUp" ">Наверх</a>
+    <!--Модальное окно меню header-->
+    <div id="modal" class="modal">
+        <ul class="header-nav">
+            <li><a class="nav__link" href="index.html">Главная</a></li>
+            <li><a class="nav__link active" href="#">Меню</a></li>
+            <li><a class="nav__link" href="#">О нас</a></li>
+            <li><a class="nav__link" href="#">Контакты</a></li>
+        </ul>
+        <button class="burger-close" onclick="closeModal()"></button>
+    </div>
     <!--JavaScript-->
     <script>
         // Smooth Scroll
@@ -266,14 +284,22 @@
         });
         }
 
-    function scrollFunction(){
-        if ( document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
-            document.getElementById('btnUp').className = 'button-up visible';
-        } else {
-            document.getElementById('btnUp').className = 'button-up hidden';
-        }
+        function scrollFunction(){
+            if ( document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
+                document.getElementById('btnUp').className = 'button-up visible';
+            } else {
+                document.getElementById('btnUp').className = 'button-up hidden';
+            }
     }
+    
+        // Menu
+        function openModal() {
+            document.getElementById("modal").style.top = "0px";
+        }
 
+        function closeModal() {
+            document.getElementById("modal").style.top = "-400px";
+        } 
     </script>
 </body>
 </html>
