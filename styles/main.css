@@ -560,7 +560,7 @@ header {
     }
 }
 @media (min-width: 766px) {
-    .burger {
+    .header-burger {
         display: none;
     }
 }
@@ -705,7 +705,7 @@ header {
     }
     .footer-box {
         display: grid;
-        grid-template-columns: 44% 71%;
+        grid-template-columns: 44% 56%;
         grid-template-rows: 21% 45% 40%;
         grid-template-areas: 'logo tel'
                              'links links'
@@ -716,6 +716,7 @@ header {
     }
     ._tel {
         grid-area: tel;
+        float: right;
     }
     ._links {
         grid-area: links;
@@ -740,6 +741,3 @@ header {
         height: 37px;
     }
 }
-
-/* верни паддинги в контейнер */
-
