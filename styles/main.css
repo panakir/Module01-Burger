@@ -221,7 +221,9 @@ header {
     border-radius: 22px;
     flex-basis: 279px;
     padding: 12px 30px;
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     background-image: url(../images/arrow.svg);
     background-repeat: no-repeat;
     background-position: 90% center;
@@ -248,7 +250,8 @@ header {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .grid-menu-title {
     font-size: 30px;
