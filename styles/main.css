@@ -636,6 +636,36 @@ header {
         gap: 21px;
     }
 }
+@media (max-width: 660px) {
+    .footer-box {
+        display: grid;
+        grid-template-columns: 44% 56%;
+        grid-template-rows: 21% 45% 40%;
+        grid-template-areas: 'logo tel'
+                             'links links'
+                             'info info';
+    }
+    ._logo {
+        grid-area: logo;
+    }
+    ._tel {
+        grid-area: tel;
+        float: right;
+    }
+    ._links {
+        grid-area: links;
+    }
+    ._info {
+        grid-area: info;
+    }
+    .footer-tel {
+        display: block;
+    }
+    .footer-list + .footer-list-tel {
+        display: none;
+    }
+
+}
 @media (max-width: 567px) {
     .breadcrumbs a {
         font-size: 14px;
@@ -705,33 +735,6 @@ header {
     }
     .menu-other .grid-menu-item {
         flex:0 0 139px;
-    }
-    .footer-box {
-        display: grid;
-        grid-template-columns: 44% 56%;
-        grid-template-rows: 21% 45% 40%;
-        grid-template-areas: 'logo tel'
-                             'links links'
-                             'info info';
-    }
-    ._logo {
-        grid-area: logo;
-    }
-    ._tel {
-        grid-area: tel;
-        float: right;
-    }
-    ._links {
-        grid-area: links;
-    }
-    ._info {
-        grid-area: info;
-    }
-    .footer-tel {
-        display: block;
-    }
-    .footer-list + .footer-list-tel {
-        display: none;
     }
 }
 @media (max-width: 320px) {
