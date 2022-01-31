@@ -607,7 +607,7 @@ header {
         padding-bottom: 50px;
     }
     .extra-menu .grid-menu-item {
-        flex: 0 0 281px;
+        flex: 0 0 40%;
     }
     .menu-other .grid-menu-cover,
     .menu-other .grid-menu-cover img {
@@ -725,16 +725,20 @@ header {
     .extra-menu {
         height: 390px;
     }
+    .extra-menu .grid-menu {
+        padding-bottom: 60px;
+    }
     .menu-other {
         gap: 6px;
+        padding-bottom: 60px;
     }
     .menu-other .grid-menu-cover,
     .menu-other .grid-menu-cover img {
         width: 100%;
         height: 180px;
     }
-    .menu-other .grid-menu-item {
-        flex:0 0 139px;
+    .footer {
+        margin-top: 50px;
     }
 }
 @media (max-width: 320px) {
