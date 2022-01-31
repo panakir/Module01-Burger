@@ -739,6 +739,7 @@ header {
     }
     .footer {
         margin-top: 50px;
+        padding-bottom: 90px;
     }
 }
 @media (max-width: 320px) {
